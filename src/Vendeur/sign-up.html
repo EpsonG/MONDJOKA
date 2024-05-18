@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn5XwvwXnLKdvZlGZhSv0TVkkDnY75nA8&callback=initMap"
+        async defer></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MonDJOKA</title>
+</head>
+
+<body class="">
+    <!--Navbar-->
+    <nav class="bg-[#020402] navbar">
+        <div class="">
+            <div class="flex justify-between py-1 px-36 bg-white text-[#020402]">
+                <div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <?xml version="1.0" encoding="UTF-8"?><svg width="18px" height="18px" viewBox="0 0 24 24"
+                        stroke-width="0.8" fill="#fff" xmlns="http://www.w3.org/2000/svg" color="#fff">
+                        <path
+                            d="M4 11.4998L3.51493 11.6211C2.62459 11.8437 2 12.6436 2 13.5614V15.4382C2 16.356 2.62459 17.1559 3.51493 17.3785L5.25448 17.8134C5.63317 17.9081 6 17.6217 6 17.2313V11.7683C6 11.3779 5.63317 11.0915 5.25448 11.1862L4 11.4998ZM4 11.4998V11C4 6.58172 7.58172 3 12 3C16.4183 3 20 6.58172 20 11V11.4998M20 11.4998L20.4851 11.6211C21.3754 11.8437 22 12.6436 22 13.5614V15.4382C22 16.356 21.3754 17.1559 20.4851 17.3785L20 17.4998M20 11.4998L18.7455 11.1862C18.3668 11.0915 18 11.3779 18 11.7683V17.2313C18 17.6217 18.3668 17.9081 18.7455 17.8134L20 17.4998M15 20.5H18C19.1046 20.5 20 19.6046 20 18.5V18V17.4998M15 20.5C15 19.6716 14.3284 19 13.5 19H10.5C9.67157 19 9 19.6716 9 20.5C9 21.3284 9.67157 22 10.5 22H13.5C14.3284 22 15 21.3284 15 20.5Z"
+                            stroke="#000000" stroke-width="0.8"></path>
+                    </svg>
+                    <p>Service client : +237 690807060 </p>
+                </div>
+            </div>
+            <div class="flex px-36 mx-auto py-1 justify-between">
+                <!-- <div class=" space-x-4 ">Es-tu organisateur? </div> -->
+                <div class="flex space-x-4 ">
+                    <!-- logo -->
+                    <div>
+                        <a href="" class="flex items-center py-3 px-3 text-[#F8F32B]">
+                            <h4 class="font-extrabold text-2xl">MonDJOKA</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex space-x-4 ">
+                    <!-- primary nav -->
+                    <div class="flex items-center space-x-2">
+                        <ul class="flex items-center space-x-2">
+                            <li><a href="#" class="py-1 px-2 text-gray-100 font-light active">Accueil</a></li>
+                            <li><a href="#"
+                                    class="py-1 px-2 text-gray-100 font-light hover:bg-gray-800 hover:text-gray-100">Caractéristiques</a>
+                            </li>
+                            <li><a href="#"
+                                    class="py-1 px-2 text-gray-100 font-light hover:bg-gray-800 hover:text-gray-100">Premium</a>
+                            </li>
+                            <li><a href="#"
+                                    class="py-1 px-2 text-gray-100 font-light hover:bg-gray-800 hover:text-gray-100">Application
+                                    Mobile
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- mobile menu -->
+    </nav>
+
+    <div class="max-w-md mx-auto mt-8 p-6 bg-white rounded-md shadow-md">
+        <h2 class="text-2xl font-semibold text-center mb-4">Créer un compte marchand</h2>
+        <form>
+            <div class="mb-4">
+                <label for="nom" class="block text-sm font-medium text-gray-700">Nom de
+                    client</label>
+                <input type="text" id="nom" name="nom"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="prenom" class="block text-sm font-medium text-gray-700">Prénom</label>
+                <input type="text" id="prenom" name="prenom"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="boutique" class="block text-sm font-medium text-gray-700">Nom de la boutique</label>
+                <input type="text" id="boutique" name="boutique"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="telephone" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Adresse email</label>
+                <input type="email" id="email" name="email"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <!--  -->
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700">Localisation via Google Maps</label>
+                <!-- Ici vous pouvez intégrer une carte Google Maps -->
+                <div id="map" class="h-[400px]"></div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Mot de passe</label>
+                <input type="password" id="password" name="password"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <div class="mb-6">
+                <label for="password_confirmation" class="block text-sm font-medium text-gray-700">Confirmation de mot
+                    de passe</label>
+                <input type="password" id="password_confirmation" name="password_confirmation"
+                    class="mt-1 p-4 block w-full rounded-md border border-gray-300 focus:border-blue-500 focus:outline-none"
+                    required>
+            </div>
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Créer
+                    le compte</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+<script>
+    // Fonction d'initialisation de la carte
+    function initMap() {
+        // Coordonnées par défaut (par exemple, le centre de Paris)
+        var paris = { lat: 28.8566, lng: 2.3522 };
+        // Création de la carte
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: paris
+        });
+        // Création du marqueur
+        var marker = new google.maps.Marker({
+            position: paris,
+            map: map,
+            draggable: true // Permet de déplacer le marqueur
+        });
+        // Mettre à jour les champs de formulaire lorsque le marqueur est déplacé
+        google.maps.event.addListener(marker, 'dragend', function (event) {
+            document.getElementById('latitude').value = event.latLng.lat();
+            document.getElementById('longitude').value = event.latLng.lng();
+        });
+    }
+</script>
+
+</html>

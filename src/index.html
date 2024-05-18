@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding prepare</title>
+    <link rel="stylesheet" href="/src/css/output.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="bg-gray-100 navbar">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between">
+                <!-- <div class=" space-x-4 ">Es-tu organisateur? </div> -->
+                <div class="flex space-x-4 ">
+                    <!-- logo -->
+                    <div>
+                        <a href="" class="flex items-center py-3 px-3 text-blue-700">
+                            <h4 class="font-extrabold text-2xl">WeddingPrepare</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex space-x-4 ">
+                    <!-- primary nav -->
+                    <div class="flex items-center space-x-2">
+                        <ul>
+                            <li><a href="#"
+                                    class="active py-1 px-2 rounded text-gray-700 hover:bg-gray-800 hover:text-gray-100">Outils
+                                    de plannification</a></li>
+                            <li class="dropdown">
+                                <a href="#"
+                                    class="dropbtn py-1 px-2 rounded text-gray-700 hover:bg-gray-800 hover:text-gray-100">Lieux
+                                    de mariage</a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="rounded">Salle de réception</a>
+                                    <a href="#" class="rounded">Jardin extérieur</a>
+                                    <a href="#" class="rounded">Plage</a>
+                                    <a href="#" class="rounded">Salle de réception</a>
+                                    <a href="#" class="rounded">Jardin extérieur</a>
+                                    <a href="#" class="rounded">Plage</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#"
+                                    class="dropbtn py-1 px-2 rounded text-gray-700 hover:bg-gray-800 hover:text-gray-100">Fournisseurs
+                                    de mariage</a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="rounded">Traiteur</a>
+                                    <a href="#" class="rounded">Photographe</a>
+                                    <a href="#" class="rounded">Fleuriste</a>
+                                </div>
+                            </li>
+                            <li><a href="#"
+                                    class="py-1 px-2 rounded text-gray-700 hover:bg-gray-800 hover:text-gray-100">Robes</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="py-1 px-2 rounded text-gray-700 hover:bg-gray-800 hover:text-gray-100">Communauté
+                                    Camer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- secondary nav -->
+                <div class="flex items-center space-x-2">
+                    <a href="" class="py-4 px-3 font-bold">Login</a>
+                    <a href=""
+                        class="py-2 px-3 bg-red-200 hover:bg-gray-900 text-red-800 hover:text-gray-100 font-bold transition duration-300">SignUp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+    </nav>
+    <!-- content -->
+    <!-- section banner -->
+    <section>
+        <div class="flex max-w-7xl mx-auto banner md:text-left"
+            style="background-image: url(https://th.bing.com/th/id/R.8c45959575ac5086ed46f67333bd38da?rik=edagk70o%2b7M4mA&pid=ImgRaw&r=0)">
+            <div class="text-left py-32 h-2xl w-4xl px-6">
+                <h1 class="font-extrabold text-4x leading-none rotate-45">Trouvons une organisation </br> pour ton
+                    mariage</h1>
+                <p>Pour le jour le plus important de ta vie, recherches parmi plus de 17 000 professionnels locaux avec
+                    des avis, des prix, des disponibilités, etc.</p>
+                <div class="mt-6 flex max-w-md gap-x-6">
+                    <input id="search" name="search" type="search" class="px-2 search-bar mx-1"
+                        placeholder="Je cherche...">
+                    <div class="custom-select inset-y-0 right-0 flex items-center">
+                        <label for="location" class="">dans </label>
+                        <select id="location" name="location"
+                            class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+                            <option>Douala</option>
+                            <option>Yaoundé</option>
+                            <option>Garoua</option>
+                            <option>Buéa</option>
+                            <option>Kribi</option>
+                        </select>
+                    </div>
+                    <button type="submit"
+                        class="rounded font-semibold px-2 py-2 bg-yellow-400 hover:bg-blue-300">Valider --></button>
+                </div>
+            </div>
+        </div>
+        <div class="flex max-w-7xl mx-auto px-6 py-4 space-x-2 text-gray-100 bg-gray-700">
+            <p>Pour le jour le plus important de ta vie, recherches parmi plus de 17 000 professionnels locaux avec des
+                avis, des prix, des disponibilités, etc.</p>
+        </div>
+    </section>
+    <section class="bg-blue-300 mt-6">
+        <div class=" max-w-7xl mx-auto">
+            <div class="text-left w-2xl px-6">
+                <h2 class="font-extrabold leading-none text-3x rotate-45">Enjoy planning your wedding
+                </h2>
+                <p>Start planning your wedding with us, it's free!</p>
+            </div>
+            <div class="grid-container py-4 mt-6">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/a2/5c/5f/a25c5fc37ff46c0cd35ad36e74da5c29--richmond-virginia-harlem-renaissance.jpg"
+                        alt="Image 1">
+                    <div class="card-content px-3 py-3">
+                        <h3 class="font-semibold">Lieux de mariage</h3>
+                        <p>Description de la carte 1</p>
+                        <button>En savoir plus</button>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.JkMD8roX45i4u9vtkLTQAgHaHa?rs=1&pid=ImgDetMains"
+                        alt="Image 2">
+                    <div class="card-content px-3 py-1">
+                        <h3 class="font-semibold">Fournisseurs de mariage</h3>
+                        <p>Description de la carte 2</p>
+                        <button>En savoir plus</button>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres cartes ici -->
+            </div>
+            <div class="secondary py-1 mt-6">
+                <div class="box work">
+                    <div class="img-section">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                            <path fill-rule="nonzero" fill="#3F9CBB"
+                                d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="box-desc">
+                        <div class="box-header">
+                            <div class="box-title">Play</div>
+                            <div class="box-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="box-time">32hrs</div>
+                        <p class="recent">Last Week-36hrs</p>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="img-section">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="76px" height="77px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M9 21H15M9 21V16M9 21H3.6C3.26863 21 3 20.7314 3 20.4V16.6C3 16.2686 3.26863 16 3.6 16H9M15 21V9M15 21H20.4C20.7314 21 21 20.7314 21 20.4V3.6C21 3.26863 20.7314 3 20.4 3H15.6C15.2686 3 15 3.26863 15 3.6V9M15 9H9.6C9.26863 9 9 9.26863 9 9.6V16" stroke="#000000" stroke-width="1.5"></path></svg>
+                    </div>
+                    <div class="box-desc">
+                        <div class="box-header">
+                            <div class="box-title">Play</div>
+                            <div class="box-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="box-time">32hrs</div>
+                        <p class="recent">Last Week-36hrs</p>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="img-section">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                            <path fill-rule="nonzero" fill="#3F9CBB"
+                                d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="box-desc">
+                        <div class="box-header">
+                            <div class="box-title">Play</div>
+                            <div class="box-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="box-time">32hrs</div>
+                        <p class="recent">Last Week-36hrs</p>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="img-section">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                            <path fill-rule="nonzero" fill="#3F9CBB"
+                                d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="box-desc">
+                        <div class="box-header">
+                            <div class="box-title">Play</div>
+                            <div class="box-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="box-time">32hrs</div>
+                        <p class="recent">Last Week-36hrs</p>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="img-section">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                            <path fill-rule="nonzero" fill="#3F9CBB"
+                                d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="box-desc">
+                        <div class="box-header">
+                            <div class="box-title">Play</div>
+                            <div class="box-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="box-time">32hrs</div>
+                        <p class="recent">Last Week-36hrs</p>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="img-section">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="77" width="76">
+                            <path fill-rule="nonzero" fill="#3F9CBB"
+                                d="m60.91 71.846 12.314-19.892c3.317-5.36 3.78-13.818-2.31-19.908l-26.36-26.36c-4.457-4.457-12.586-6.843-19.908-2.31L4.753 15.69c-5.4 3.343-6.275 10.854-1.779 15.35a7.773 7.773 0 0 0 7.346 2.035l7.783-1.945a3.947 3.947 0 0 1 3.731 1.033l22.602 22.602c.97.97 1.367 2.4 1.033 3.732l-1.945 7.782a7.775 7.775 0 0 0 2.037 7.349c4.49 4.49 12.003 3.624 15.349-1.782Zm-24.227-46.12-1.891-1.892-1.892 1.892a2.342 2.342 0 0 1-3.312-3.312l1.892-1.892-1.892-1.891a2.342 2.342 0 0 1 3.312-3.312l1.892 1.891 1.891-1.891a2.342 2.342 0 0 1 3.312 3.312l-1.891 1.891 1.891 1.892a2.342 2.342 0 0 1-3.312 3.312Zm14.19 14.19a2.343 2.343 0 1 1 3.315-3.312 2.343 2.343 0 0 1-3.314 3.312Zm0 7.096a2.343 2.343 0 0 1 3.313-3.312 2.343 2.343 0 0 1-3.312 3.312Zm7.096-7.095a2.343 2.343 0 1 1 3.312 0 2.343 2.343 0 0 1-3.312 0Zm0 7.095a2.343 2.343 0 0 1 3.312-3.312 2.343 2.343 0 0 1-3.312 3.312Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="box-desc">
+                        <div class="box-header">
+                            <div class="box-title">Play</div>
+                            <div class="box-menu">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="box-time">32hrs</div>
+                        <p class="recent">Last Week-36hrs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+
+    </div>
+
+</body>
+
+</html>
