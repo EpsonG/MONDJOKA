@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="/src/css/output.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>MonDJOKA PRO - Fonctionnaités</title>
 </head>
@@ -29,7 +31,7 @@
   <section>
     <div
       class="flex  mx-auto justify-between item-center 2xl:p-56 xl:p-20 lg:p-10 md:p-10 banner-division md:text-left "
-      style="background-image: url(./img/portrait-jeune-femme-souriante-isolee.png)">
+      style="background-image: url(./img/portrait-jeune-femme-souriante-isolee.png); background-size: contain; background-position: center right;">
       <div class="flex mx-auto justify-between 2xl:justify-around w-full  desktop:max-w-7xl">
         <div class="flex flex-col gap-y-6 h-auto px-6 text-white  content-center">
           <h1 class="font-extrabold text-6xl ">Faites de la <span class="italic text-[#F8F32B]"> Publicité</span> <br>
@@ -44,7 +46,7 @@
             </a>
           </div>
         </div>
-        <div class="connexion flex justify-start w-[400px]">
+        <div class="flex">
           <!-- <h5 class="my-8">VOUS AVEZ DEJA UN COMPTE ?</h5>
           <form action="" class="flex flex-col gap-y-8">
             <div class="flex form-connexion-div gap-x-4 w-full">
@@ -84,12 +86,9 @@
             <button
               class="tab-link px-4 py-2 text-gray-600 hover:text-[#32746D] focus:outline-none focus:text-[#32746D] border-b-2 focus:border-[#32746D]"
               data-tab="tab-critiques">Critiques</button>
-            <button
+            <!-- <button
               class="tab-link px-4 py-2 text-gray-600 hover:text-[#32746D] focus:outline-none focus:text-[#32746D] border-b-2 focus:border-[#32746D]"
-              data-tab="tab-offres">Offres</button>
-            <button
-              class="tab-link px-4 py-2 text-gray-600 hover:text-[#32746D] focus:outline-none focus:text-[#32746D] border-b-2 focus:border-[#32746D]"
-              data-tab="tab-epreuves">Épreuves</button>
+              data-tab="tab-epreuves">Épreuves</button> -->
             <button
               class="tab-link px-4 py-2 text-gray-600 hover:text-[#32746D] focus:outline-none focus:text-[#32746D] border-b-2 focus:border-[#32746D]"
               data-tab="tab-messages">Messages</button>
@@ -105,13 +104,7 @@
 
               <div class="bg-white text-center shadow-md rounded-lg p-6">
                 <div class="flex flex-col gap-4 items-center mb-4">
-                  <svg class="w-24 h-24 text-[#32746D] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M12 14l9-5-9-5-9 5 9 5zm0 7v-5l-9-5 9 5 9-5-9 5v5z"></path>
-                  </svg>
                   <h3 class="text-xl font-semibold">Vitrine</h3>
-
                   <p class="text-gray-600 mb-4">Explorez notre vitrine et ses fonctionnalités uniques.Affichez
                     magnifiquement les informations et les détails de votre entreprise sur votre vitrine MonDJOKA
                     personnalisée.</p>
@@ -121,11 +114,7 @@
               </div>
               <div class="bg-white text-center shadow-md rounded-lg p-6">
                 <div class="flex flex-col gap-4 items-center mb-4">
-                  <svg class="w-24 h-24 text-[#32746D] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 10h18M3 14h18M3 6h18M3 18h18"></path>
-                  </svg>
+                  
                   <h3 class="text-xl font-semibold">Critiques</h3>
 
                   <p class="text-gray-600 mb-4">Demandez, collectez et répondez facilement aux avis d’anciens clients
@@ -134,28 +123,9 @@
                     plus</button>
                 </div>
               </div>
-              <div class="bg-white text-center shadow-md rounded-lg p-6">
+              <!-- <div class="bg-white text-center shadow-md rounded-lg p-6">
                 <div class="flex flex-col gap-4 items-center mb-4">
-                  <svg class="w-24 h-24 text-[#32746D] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 10h18M3 14h18M3 6h18M3 18h18"></path>
-                  </svg>
-                  <h3 class="text-xl font-semibold">Offres</h3>
-
-                  <p class="text-gray-600 mb-4">Annoncez des offres spéciales et des remises pour attirer de nouvelles
-                    affaires et obtenir une plus grande visibilité dans l’annuaire MonDJOKA.</p>
-                  <button class="btn-tab px-4 py-2 bg-[#32746D] text-white rounded" data-tab="tab-offres">Voir
-                    plus</button>
-                </div>
-              </div>
-              <div class="bg-white text-center shadow-md rounded-lg p-6">
-                <div class="flex flex-col gap-4 items-center mb-4">
-                  <svg class="w-24 h-24 text-[#32746D] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 10h18M3 14h18M3 6h18M3 18h18"></path>
-                  </svg>
+                  
                   <h3 class="text-xl font-semibold">Épreuves</h3>
 
                   <p class="text-gray-600 mb-4">Faites la promotion des événements à venir sur votre vitrine pour
@@ -163,14 +133,10 @@
                   <button class="btn-tab px-4 py-2 bg-[#32746D] text-white rounded" data-tab="tab-epreuves">Voir
                     plus</button>
                 </div>
-              </div>
+              </div> -->
               <div class="bg-white text-center shadow-md rounded-lg p-6">
                 <div class="flex flex-col gap-4 items-center mb-4">
-                  <svg class="w-24 h-24 text-[#32746D] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 10h18M3 14h18M3 6h18M3 18h18"></path>
-                  </svg>
+                  
                   <h3 class="text-xl font-semibold">Messages</h3>
 
                   <p class="text-gray-600 mb-4">Recevez des notifications instantanées sur votre e-mail et votre
@@ -182,11 +148,7 @@
               </div>
               <div class="bg-white text-center shadow-md rounded-lg p-6">
                 <div class="flex flex-col gap-4 items-center mb-4">
-                  <svg class="w-24 h-24 text-[#32746D] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M3 10h18M3 14h18M3 6h18M3 18h18"></path>
-                  </svg>
+                  
                   <h3 class="text-xl font-semibold">Analytics</h3>
 
                   <p class="text-gray-600 mb-4">Surveillez les détails des performances de votre vitrine, y compris les
@@ -233,19 +195,186 @@
           </div>
           <div id="tab-critiques" class="tab-content hidden">
             <h2 class="text-2xl font-bold mb-4">Critiques</h2>
-            <p>Contenu des critiques...</p>
+            <script defer>
+              document.addEventListener('DOMContentLoaded', () => {
+                const form = document.getElementById('evaluation-form');
+                const result = document.getElementById('evaluation-result');
+
+                form.addEventListener('submit', (e) => {
+                  e.preventDefault();
+
+                  let score = 0;
+                  const responses = form.querySelectorAll('input[type="radio"]:checked');
+
+                  responses.forEach(response => {
+                    score += parseInt(response.value);
+                  });
+
+                  result.textContent = `Votre score d'évaluation est : ${score}`;
+                  result.classList.remove('hidden');
+                });
+              });
+            </script>
+
+            <header class="bg-purple-600 text-white p-6">
+              <div class="container mx-auto">
+                <h1 class="text-3xl font-bold">Évaluation de Votre Boutique</h1>
+                <p class="mt-2">Découvrez comment votre boutique sera évaluée sur différents critères.</p>
+              </div>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="bg-white py-12">
+              <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                  <h2 class="text-4xl font-bold mb-4">Évaluation Compréhensive</h2>
+                  <p class="text-lg text-gray-700 mb-6">Nous utilisons divers critères pour évaluer votre boutique et
+                    vous aider à l'améliorer.</p>
+                </div>
+                <div class="md:w-1/2">
+                  <img src="https://via.placeholder.com/500x300" alt="Illustration d'évaluation"
+                    class="rounded-lg shadow-lg">
+                </div>
+              </div>
+            </section>
+
+            <!-- Evaluation Criteria Section -->
+            <section class="bg-gray-100 py-12">
+              <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Critères d'Évaluation</h2>
+                <div class="flex flex-wrap -mx-4">
+                  <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                      <img src="https://via.placeholder.com/100" alt="Critère 1" class="mx-auto mb-4">
+                      <h3 class="text-xl font-bold mb-2">Présentation Visuelle</h3>
+                      <p class="text-gray-700">L'apparence générale et l'attrait visuel de la vitrine et de l'intérieur
+                        de la boutique.</p>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                      <img src="https://via.placeholder.com/100" alt="Critère 2" class="mx-auto mb-4">
+                      <h3 class="text-xl font-bold mb-2">Service Client</h3>
+                      <p class="text-gray-700">La qualité de l'accueil et de l'assistance offerts aux clients.</p>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                      <img src="https://via.placeholder.com/100" alt="Critère 3" class="mx-auto mb-4">
+                      <h3 class="text-xl font-bold mb-2">Disponibilité des Produits</h3>
+                      <p class="text-gray-700">L'inventaire et la facilité avec laquelle les clients peuvent trouver ce
+                        qu'ils cherchent.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Functional Evaluation Section -->
+            <section class="bg-white py-12">
+              <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Évaluation Fonctionnelle</h2>
+                <div class="w-full max-w-lg mx-auto bg-gray-100 p-6 rounded-lg shadow-lg">
+                  <form id="evaluation-form">
+                    <div class="mb-4">
+                      <p class="font-bold mb-2">Présentation Visuelle</p>
+                      <div class="flex items-center">
+                        <input type="radio" id="visuel1" name="visuel" value="5" class="mr-2">
+                        <label for="visuel1" class="mr-4">Excellent</label>
+                        <input type="radio" id="visuel2" name="visuel" value="3" class="mr-2">
+                        <label for="visuel2" class="mr-4">Bon</label>
+                        <input type="radio" id="visuel3" name="visuel" value="1" class="mr-2">
+                        <label for="visuel3">Moyen</label>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <p class="font-bold mb-2">Service Client</p>
+                      <div class="flex items-center">
+                        <input type="radio" id="service1" name="service" value="5" class="mr-2">
+                        <label for="service1" class="mr-4">Excellent</label>
+                        <input type="radio" id="service2" name="service" value="3" class="mr-2">
+                        <label for="service2" class="mr-4">Bon</label>
+                        <input type="radio" id="service3" name="service" value="1" class="mr-2">
+                        <label for="service3">Moyen</label>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <p class="font-bold mb-2">Disponibilité des Produits</p>
+                      <div class="flex items-center">
+                        <input type="radio" id="produits1" name="produits" value="5" class="mr-2">
+                        <label for="produits1" class="mr-4">Excellent</label>
+                        <input type="radio" id="produits2" name="produits" value="3" class="mr-2">
+                        <label for="produits2" class="mr-4">Bon</label>
+                        <input type="radio" id="produits3" name="produits" value="1" class="mr-2">
+                        <label for="produits3">Moyen</label>
+                      </div>
+                    </div>
+                    <div class="flex justify-center">
+                      <button type="submit"
+                        class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">Évaluer</button>
+                    </div>
+                  </form>
+                  <div id="evaluation-result" class="mt-6 text-center text-lg font-bold hidden"></div>
+                </div>
+              </div>
+            </section>
           </div>
-          <div id="tab-offres" class="tab-content hidden">
-            <h2 class="text-2xl font-bold mb-4">Offres</h2>
-            <p>Contenu des offres...</p>
-          </div>
-          <div id="tab-epreuves" class="tab-content hidden">
+          <!-- <div id="tab-epreuves" class="tab-content hidden">
             <h2 class="text-2xl font-bold mb-4">Épreuves</h2>
             <p>Contenu des épreuves...</p>
-          </div>
+          </div> -->
           <div id="tab-messages" class="tab-content hidden">
             <h2 class="text-2xl font-bold mb-4">Messages</h2>
-            <p>Contenu des messages...</p>
+
+
+            <!-- Hero Section -->
+            <section class="bg-white py-12">
+              <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                  <h2 class="text-4xl font-bold mb-4">Engagez des Conversations Réelles</h2>
+                  <p class="text-lg text-gray-700 mb-6">Utilisez notre plateforme pour discuter directement avec vos
+                    clients, répondre à leurs questions et améliorer leur expérience.</p>
+                  <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Commencez
+                    Maintenant</a>
+                </div>
+                <div class="md:w-1/2">
+                  <img src="https://via.placeholder.com/500x300" alt="Illustration d'une discussion"
+                    class="rounded-lg shadow-lg">
+                </div>
+              </div>
+            </section>
+            <!-- Features Section -->
+            <section class="py-20">
+              <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-down">Fonctionnalités clés</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://source.unsplash.com/random/400x300" alt="Feature 1"
+                      class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Chat en direct</h3>
+                    <p class="text-gray-600">Communiquez en temps réel avec vos clients pour répondre à leurs questions
+                      instantanément.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://source.unsplash.com/random/401x301" alt="Feature 2"
+                      class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Support multi-canal</h3>
+                    <p class="text-gray-600">Utilisez divers canaux comme les réseaux sociaux, emails et plus pour
+                      interagir avec vos clients.</p>
+                  </div>
+                  <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://source.unsplash.com/random/402x302" alt="Feature 3"
+                      class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Analyse des discussions</h3>
+                    <p class="text-gray-600">Analysez les conversations pour obtenir des insights précieux et améliorer
+                      vos services.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
           </div>
           <div id="tab-analytics" class="tab-content hidden">
             <h2 class="text-2xl font-bold mb-4">Analytics</h2>
@@ -316,6 +445,11 @@
           });
         });
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
 </body>
